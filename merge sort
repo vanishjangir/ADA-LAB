@@ -41,3 +41,15 @@ def print_list(arr):
     for i in range(len(arr)):
         print(arr[i], end=" ")
     print()
+
+
+start = time.time()
+n = int(input("Enter the no. of array elements"))
+arr = random.sample(range(1, 9999), n)
+print("Given array is :")
+print_list(arr)
+merge_sort(arr)
+print("Sorted array is: ")
+print_list(arr)
+end = time.time()
+print("Time taken: ", end - start)
